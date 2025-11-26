@@ -1,0 +1,12 @@
+app = "rahimifar-bot"
+primary_region = "iad"  # یا هر منطقه‌ای
+
+[build]
+builder = "paketo/buildpacks:python"
+
+[http_service]
+internal_port = 8080
+force_https = true
+auto_stop_machines = false  # برای ۲۴/۷
+auto_start_machines = true
+min_machines_running = 1
